@@ -1,0 +1,60 @@
+@import '../../scss/1-variables.scss';
+@import '../../scss/2-mixings.scss';
+
+main {
+    width: 92%;
+    padding: 2em 0;
+    margin: auto;
+
+    section {
+      display: grid;
+      gap: 2em 1em;
+      padding-bottom: 2em;
+      @include pc(){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      @include laptop(){
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      @include tablet(){
+        grid-template-columns: 1fr 1fr;
+      }
+      @include phone(){
+        grid-template-columns: 1fr;
+      }
+
+      article {
+        color: $text-color;
+
+        img {
+          max-width: 100%;
+          border-radius: .3em .3em 0 0;
+        }
+
+        .detalhes {
+          border: 1px solid $border-oferta;
+          margin: -5px 2px;
+          padding: 15px;
+          border-radius: 0 0 .3em .3em;
+
+          h3 {
+            margin-top: 5px;
+          }
+
+          #valor-oferta {
+            color: $orange;
+            font-weight: 600;
+            font-size: 1.2rem;
+          }
+
+          button {
+            border: 2px solid #006acb;
+            border-radius: .3rem;
+            background-color: white;
+            padding: 10px 15px;
+            color: $blue;
+          }
+        }
+      }
+    }
+  }

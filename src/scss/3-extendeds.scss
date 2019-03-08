@@ -1,0 +1,29 @@
+%flex-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+%menu-links {
+  background-color: $blue;
+  
+  ul {
+    list-style: none;
+    line-height: 2.5rem;
+    margin: 0;
+    padding-inline-start: 45px;
+
+    li {
+      display: inline;
+      margin: 10px;
+      
+      a {
+        color: gainsboro;
+        text-decoration: none;
+        &:hover{
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../scss/1-variables.scss';
+@import '../../scss/3-extendeds.scss';
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    @extend %menu-links;
+    
+    span {
+        color: white;
+    }
+}
