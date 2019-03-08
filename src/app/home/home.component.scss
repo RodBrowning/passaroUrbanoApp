@@ -1,30 +1,22 @@
-@import '../../scss/1-variables.scss';
-@import '../../scss/2-mixings.scss';
-
+@import '../../scss/styles.scss';
 main {
     width: 92%;
-    padding: 2em 0;
+    padding: 1em 0 2em 0;
     margin: auto;
+    max-width: 1024px;
 
     section {
-      display: grid;
-      gap: 2em 1em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
       padding-bottom: 2em;
-      @include pc(){
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-      }
-      @include laptop(){
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-      @include tablet(){
-        grid-template-columns: 1fr 1fr;
-      }
-      @include phone(){
-        grid-template-columns: 1fr;
-      }
 
       article {
         color: $text-color;
+        min-width: 200px;
+        max-width: 300px;
+        flex: 1;
+        margin: 1em;
 
         img {
           max-width: 100%;

@@ -1,65 +1,11 @@
 <main>
   <section>
-      <article>
-          <img src="./assets/img/img1.jpg" alt="Foto oferta">
+      <article *ngFor="let oferta of ofertas">
+          <img src="{{oferta.imagens[0].url}}" alt="Foto oferta">
           <div class="detalhes">
-              <h3>Super Burguer</h3>
-              <p>Rodizio de mini-hamburguer com opçoes de entrada</p>
-              <p id="valor-oferta">R$ 23,50</p>
-              <button>Ver oferta</button>
-          </div>
-      </article>
-      <article>
-          <img src="./assets/img/img1.jpg" alt="Foto oferta">
-          <div class="detalhes">
-              <h3>Super Burguer</h3>
-              <p>Rodizio de mini-hamburguer com opçoes de entrada</p>
-              <p id="valor-oferta">R$ 23,50</p>
-              <button>Ver oferta</button>
-          </div>
-      </article>
-      <article>
-          <img src="./assets/img/img1.jpg" alt="Foto oferta">
-          <div class="detalhes">
-              <h3>Super Burguer</h3>
-              <p>Rodizio de mini-hamburguer com opçoes de entrada</p>
-              <p id="valor-oferta">R$ 23,50</p>
-              <button>Ver oferta</button>
-          </div>
-      </article>
-      <article>
-          <img src="./assets/img/img1.jpg" alt="Foto oferta">
-          <div class="detalhes">
-              <h3>Super Burguer</h3>
-              <p>Rodizio de mini-hamburguer com opçoes de entrada</p>
-              <p id="valor-oferta">R$ 23,50</p>
-              <button>Ver oferta</button>
-          </div>
-      </article>
-      <article>
-          <img src="./assets/img/img1.jpg" alt="Foto oferta">
-          <div class="detalhes">
-              <h3>Super Burguer</h3>
-              <p>Rodizio de mini-hamburguer com opçoes de entrada</p>
-              <p id="valor-oferta">R$ 23,50</p>
-              <button>Ver oferta</button>
-          </div>
-      </article>
-      <article>
-          <img src="./assets/img/img1.jpg" alt="Foto oferta">
-          <div class="detalhes">
-              <h3>Super Burguer</h3>
-              <p>Rodizio de mini-hamburguer com opçoes de entrada</p>
-              <p id="valor-oferta">R$ 23,50</p>
-              <button>Ver oferta</button>
-          </div>
-      </article>
-      <article>
-          <img src="./assets/img/img1.jpg" alt="Foto oferta">
-          <div class="detalhes">
-              <h3>Super Burguer</h3>
-              <p>Rodizio de mini-hamburguer com opçoes de entrada</p>
-              <p id="valor-oferta">R$ 23,50</p>
+              <h3>{{ oferta.titulo }}</h3>
+              <p> {{ oferta.descricao_oferta }}</p>
+              <p id="valor-oferta">{{ oferta.valor | currency:"R$"}}</p>
               <button>Ver oferta</button>
           </div>
       </article>

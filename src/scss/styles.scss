@@ -2,4 +2,15 @@
 @import './1-variables';
 @import './2-mixings';
 @import './3-extendeds';
+@import './4-head';
+@import './5-main';
+@import './6-footer';
 @import './7-classes';
+
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
